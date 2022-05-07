@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title> HIPP </title>
+	<style> * { font-size:30px; } </style>
+</head>
+<body>
+<center>
+<br><br>
+<h1> Health Insurance Price Prediction </h1>
+<br>
+	<form method="POST" action="/check">
+		<input type="number" name="age" placeholder="enter age" required>
+		<br><br>
+		<input type="number" step="any" name="bmi" placeholder="enter bmi" required>
+		<br><br>
+		Smoker<input type="radio" name="r1" value="yes"> Yes </input>
+		<input type="radio" name="r1" value="no" checked> No </input>
+		<br><br>
+		<input type="submit" value="check">
+		<br><br>
+		
+	</form>
+	{{ msg }}
+</center>
+</body>
+</html>
